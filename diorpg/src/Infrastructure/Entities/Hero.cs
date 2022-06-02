@@ -6,6 +6,8 @@ namespace diorpg.src.Infrastructure.Entities
         public int Level { get; private set; }
         public string HeroType { get; private set; }
 
+        public Hero(){} 
+
         public Hero(string Name, int Level, string HeroType)
         {
             this.Name = Name;
@@ -27,6 +29,9 @@ namespace diorpg.src.Infrastructure.Entities
             return this.HeroType;
         }
 
+        public virtual string Attack(){
+            return $"{this.Name} attacks with his {this.HeroType}";
+        }
 
     }
 }
