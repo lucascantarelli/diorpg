@@ -1,8 +1,8 @@
 namespace diorpg.src.Infrastructure.Entities
 {
-    public class Warrior : Hero
+    public class Wizard : Hero
     {
-        public Warrior(string Name, int Level, string HeroType) : base(Name, Level, HeroType)
+        public Wizard(string Name, int Level, string HeroType) : base(Name, Level, HeroType)
         {
         }
 

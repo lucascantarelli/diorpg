@@ -1,0 +1,29 @@
+{
+  "name": "rpg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "dotnet tool restore",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucascantarelli/diorpg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucascantarelli/diorpg/issues"
+  },
+  "homepage": "https://github.com/lucascantarelli/diorpg#readme",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.1"
+  },
+  "lint-staged": {
+    "*.cs": "dotnet format --include"
+  }
+}
